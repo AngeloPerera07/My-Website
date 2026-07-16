@@ -1,71 +1,141 @@
 html, body {
-  margin:0px;
+  background-image: url('mountain.webp');
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-left: 50px;
+   margin-right: 50px;
+   max-width:100%;
 }
-.buttons{
+#buttons{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 16px;
    padding-top: 40px;
-   padding-left: 39%;
-   padding-bottom: 40px;
 }
-.section-one{
-   background-color: black;
-
+#buttons button{
+   font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+   color: black;
+   background: rgb(84, 184, 238);
+   border: none;
+   border-radius: 10px;
+   padding: 12px 20px;
+   min-width: 150px;
+   cursor: pointer;
+   transition: background 0.2s ease, transform 0.2s ease;
 }
-.profile-container {
-   color: white;
-   font-family: 'Roboto';
-    background: rgba(255, 255, 255, 0.05);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 20px 25px;
-    margin: 15px auto;
-    max-width: 800px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    transition: all 0.3s ease;
+#buttons button:hover{
+   background: #245bd0;
+   transform: translateY(-1px);
 }
-.about-me{
-   color: white;
-   font-family: 'Roboto';
-    background: rgba(255, 255, 255, 0.05);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 20px 25px;
-    margin: 15px auto;
-    max-width: 800px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    transition: all 0.3s ease;
+#buttons button:active{
+   transform: translateY(0);
 }
-.skills{
-   color: white;
-   font-family: 'Roboto';
-    background: rgba(255, 255, 255, 0.05);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 20px 25px;
-    margin: 15px auto;
-    max-width: 800px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    transition: all 0.3s ease;
+#profile-container {
+   color: black;
+   font-family: "JetBrains Mono", monospace;
+   max-width: 800px;
+   margin: 0 auto;
+   padding-left: 0;
+   padding-top: 70px;
+   text-align: center;
+   text-decoration: none;
+   display: block;
+   transition: all 0.3s ease;
 }
-p {
-   color: white;
-   font-family: 'Roboto';
-    background: rgba(255, 255, 255, 0.05);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 20px 25px;
-    margin: 15px auto;
-    max-width: 800px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    transition: all 0.3s ease;
+#name {
+   font-family: "Montserrat", sans-serif;
+   font-size: 65px;
+   font-weight: 700;
+   font-style: italic;
+}
+#description {
+   white-space: nowrap;
+   font-size: 25px;
 }
 
+.typewriter h1 {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+#about-me{
+   color: black;
+   font-family: "JetBrains Mono", monospace;
+   text-align: left;
 
+}
+#about-me h2{
+   font-size: 30px;
+}
+.list-container {
+   position: relative;
+   padding-left: 30px; /* Space for the line and dots */
+   border-left: 3px dashed black; /* The vertical dashed line */
+   max-width: 800px;
+   margin: 100px auto;
+   font-family: sans-serif;
+   color: #fff;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px; /* Spacing between sections */
+}
+.bullet {
+   position: absolute;
+   left: -41px; /* Centers the dot exactly over the border line */
+   top: 5px;
+   width: 20px;
+   height: 20px;
+   background-color: rgb(40, 98, 206);
+   border-radius: 50%;
+}
+#skills{
+   color: black;
+   font-family: "JetBrains Mono", monospace;
+   text-align: left;
+}
+p:not(#description){
+   color: black;
+   font-family: "JetBrains Mono", monospace;
+   background: rgba(255, 255, 255, 0.05);
+   border: 2px solid rgba(255, 255, 255, 0.1);
+   border-radius: 12px;
+   padding: 20px 25px;
+   margin: 15px auto;
+   max-width: 800px;
+   text-align: left;
+   text-decoration: none;
+   display: block;
+   transition: all 0.3s ease;
+}
 
+/* projects.html css */
+
+.projects{
+   border: 3px solid #fff;
+   padding: 20px;
+}
+
+.project{
+   width: 50%;
+   float: left;
+   padding: 20px;
+   border: 2px solid red;
+}
