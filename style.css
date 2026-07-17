@@ -14,6 +14,7 @@ html, body {
    flex-wrap: wrap;
    gap: 16px;
    padding-top: 40px;
+   margin-bottom: 40px;
 }
 #buttons button{
    font-family: "JetBrains Mono", monospace;
@@ -86,8 +87,8 @@ html, body {
 }
 .list-container {
    position: relative;
-   padding-left: 30px; /* Space for the line and dots */
-   border-left: 3px dashed black; /* The vertical dashed line */
+   padding-left: 30px;
+   border-left: 3px dashed black;
    max-width: 800px;
    margin: 100px auto;
    font-family: sans-serif;
@@ -111,7 +112,7 @@ html, body {
    font-family: "JetBrains Mono", monospace;
    text-align: left;
 }
-p:not(#description){
+#section-one p:not(#description){
    color: black;
    font-family: "JetBrains Mono", monospace;
    background: rgba(255, 255, 255, 0.05);
@@ -128,14 +129,89 @@ p:not(#description){
 
 /* projects.html css */
 
-.projects{
-   border: 3px solid #fff;
+.projects-container{
    padding: 20px;
+
 }
 
 .project{
-   width: 50%;
+   width: 30%;
    float: left;
-   padding: 20px;
-   border: 2px solid red;
+   padding: 17px;
+   justify-content: center;
+   border-width: 2px;
+   border-radius: 30px;
+   border-color: #2f6fed;
+   border-style: solid;
+   box-sizing: border-box;
+   margin: 0 1.5% 24px;
+
 }
+.project h2{
+   font-family: "Montserrat", sans-serif;
+   font-size: 20px;
+   text-align: center;
+}
+.project p{
+   text-align: center;
+   font-family: "JetBrains Mono", monospace;
+}
+.buttons{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 12px;
+   margin-top: 16px;
+}
+
+.buttons button{
+   font-family: "JetBrains Mono", monospace;
+   font-weight: bold;
+   color: white;
+   background: #2f6fed;
+   border: none;
+   border-radius: 10px;
+   padding: 10px 16px;
+   min-width: 140px;
+   cursor: pointer;
+   transition: background 0.2s ease, transform 0.2s ease;
+
+}
+.buttons button:hover{
+   background: #245bd0;
+   transform: translateY(-1px);
+}
+.buttons .github-button:hover{
+   background: #245bd0;
+   transform: translateY(-1px);
+   background-image: url('githubblue.png');
+   background-position: center;
+   background-size: 22px 22px;
+   background-repeat: no-repeat;
+   color: transparent;
+   text-shadow: none;
+}
+.buttons button:active{
+   transform: translateY(0);
+}
+.buttons .github-button{
+   background-color: #2f6fed;
+   background-image: url('githubblue.png');
+   background-size: 22px 22px;
+   background-position: 14px center;
+   background-repeat: no-repeat;
+   padding-left: 44px;
+   color: white;
+   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+}
+#message{
+   clear: both;
+   width: 100%;
+   padding: 100px 20px 0;
+   font-family: "JetBrains Mono", monospace;
+   text-align: center;
+   margin: 0 auto;
+   line-height: 1.5;
+
+}
+
