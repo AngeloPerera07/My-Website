@@ -214,4 +214,88 @@ html, body {
    line-height: 1.5;
 
 }
+/* Css of contacts.html */
+#links{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 14px;
+   max-width: 560px;
+   margin: 80px auto 0;
+   padding: 32px 24px;
+   border: 2px solid rgba(47, 111, 237, 0.45);
+   border-radius: 24px;
+   background: rgba(255, 255, 255, 0.12);
+}
 
+#links h2{
+   margin: 0 0 6px;
+   font-family: "Montserrat", sans-serif;
+   font-size: 32px;
+   color: black;
+   text-align: center;
+}
+
+#links button{
+   font-family: "JetBrains Mono", monospace;
+   font-weight: bold;
+   min-width: 220px;
+   padding: 12px 22px;
+   border-radius: 12px;
+   color: white;
+   background: #2f6fed;
+   cursor: pointer;
+   transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+   box-shadow: 0 6px 16px rgba(47, 111, 237, 0.25);
+}
+
+#links button:hover{
+   background: #245bd0;
+   transform: translateY(-2px);
+   box-shadow: 0 10px 22px rgba(47, 111, 237, 0.35);
+
+}
+
+#links button:active{
+   transform: translateY(0);
+}
+#links .github-button:hover{
+   background-color: #2f6fed;
+   background-image: url('githubblue.png');
+   background-size: 22px 22px;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-left: 44px;
+   color: transparent;
+   text-shadow: none;
+}
+#links #LinkedIn:hover {
+   background-color: #2f6fed;
+   background-image: url('linkedin.png');
+   background-size: 22px 22px;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-left: 44px;
+   color: transparent;
+   text-shadow: none;
+}
+#links #Instagram:hover {
+   background-color: #2f6fed;
+   background-image: url('instagram.png');
+   background-size: 22px 22px;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-left: 44px;
+   color: transparent;
+   text-shadow: none;
+}
+#links #Twitter:hover {
+   background-color: #2f6fed;
+   background-image: url('twitter.png');
+   background-size: 22px 22px;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-left: 44px;
+   color: transparent;
+   text-shadow: none;
+}
