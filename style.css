@@ -1,5 +1,5 @@
 html, body {
-  background-image: url('mountain.webp');
+   background-image: url('images/mountain.webp');
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
@@ -184,7 +184,7 @@ html, body {
 .buttons .github-button:hover{
    background: #245bd0;
    transform: translateY(-1px);
-   background-image: url('githubblue.png');
+   background-image: url('images/githubblue.png');
    background-position: center;
    background-size: 22px 22px;
    background-repeat: no-repeat;
@@ -196,7 +196,7 @@ html, body {
 }
 .buttons .github-button{
    background-color: #2f6fed;
-   background-image: url('githubblue.png');
+   background-image: url('images/githubblue.png');
    background-size: 22px 22px;
    background-position: 14px center;
    background-repeat: no-repeat;
@@ -261,7 +261,7 @@ html, body {
 }
 #links .github-button:hover{
    background-color: #2f6fed;
-   background-image: url('githubblue.png');
+   background-image: url('images/githubblue.png');
    background-size: 22px 22px;
    background-position: center;
    background-repeat: no-repeat;
@@ -271,7 +271,7 @@ html, body {
 }
 #links #LinkedIn:hover {
    background-color: #2f6fed;
-   background-image: url('linkedin.png');
+   background-image: url('images/linkedin.png');
    background-size: 22px 22px;
    background-position: center;
    background-repeat: no-repeat;
@@ -281,7 +281,7 @@ html, body {
 }
 #links #Instagram:hover {
    background-color: #2f6fed;
-   background-image: url('instagram.png');
+   background-image: url('images/instagram.png');
    background-size: 22px 22px;
    background-position: center;
    background-repeat: no-repeat;
@@ -291,7 +291,7 @@ html, body {
 }
 #links #Twitter:hover {
    background-color: #2f6fed;
-   background-image: url('twitter.png');
+   background-image: url('images/twitter.png');
    background-size: 22px 22px;
    background-position: center;
    background-repeat: no-repeat;
